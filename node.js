@@ -11,9 +11,9 @@ app.use(cors({
 
 app.use(express.json())
 
-const client = new MongoClient(config.MONGO_CONNECTION_STRING)
+const client = new MongoClient(config.MYAPIKEY)
 const usersDB = client.db('testBase-db').collection('users-DB')
-// client.connect()
+client.connect()
 async function run() {
     try {
         await client.connect();
