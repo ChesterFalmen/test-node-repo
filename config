@@ -1,3 +1,3 @@
-const MONGO_CONNECTION_STRING = "mongodb+srv://sergiyolbondarenko:nQi8sDF9CE06qdQn@users-db.qawke3x.mongodb.net/?retryWrites=true&w=majority"
+const MONGO_CONNECTION_STRING = process.env.MYAPIKEY;
 
-module.exports = {MONGO_CONNECTION_STRING}
+module.exports = {MYAPIKEY}
